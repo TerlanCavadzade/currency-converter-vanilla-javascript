@@ -1,0 +1,45 @@
+$buttonParagraphColor: #9f9f9f;
+$inputTextColor: #c6c6c6;
+$inputCheckedBackgroundColor: #833ae0;
+
+.button-group-container {
+  margin-top: 2rem;
+  p {
+    color: $buttonParagraphColor;
+    font-size: 1rem;
+  }
+}
+
+.button-group {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  input {
+    color: $inputTextColor;
+    border: 1px solid currentColor;
+    padding: 0.25em 0.75em;
+    appearance: none;
+    cursor: pointer;
+    flex: 1;
+    &::before {
+      content: attr(data-currency);
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0.06em;
+    }
+    &:first-of-type {
+      border-top-left-radius: 0.25em;
+      border-bottom-left-radius: 0.25em;
+    }
+    &:last-of-type {
+      border-top-right-radius: 0.25em;
+      border-bottom-right-radius: 0.25em;
+    }
+    &:checked {
+      background-color: $inputCheckedBackgroundColor;
+      color: white;
+      border-color: $inputCheckedBackgroundColor;
+    }
+  }
+}

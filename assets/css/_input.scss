@@ -1,0 +1,31 @@
+$inputBorderColor: #e5e5e5;
+$ratingColor: #c6c6c6;
+
+.input-container {
+  padding: 1em 1em 0.5em 1em;
+  border: 1px solid $inputBorderColor;
+  border-radius: 0.25em;
+  margin-top: 1rem;
+  max-width: 270px;
+
+  input {
+    border: none;
+    font-weight: 700;
+    font-size: 2rem;
+    outline: none;
+    width: 100%;
+    &[type="number"] {
+      -moz-appearance: textfield;
+    }
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+  }
+}
+
+.rating {
+  margin-top: 1rem;
+  color: $ratingColor;
+  font-size: 0.8rem;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="./assets/images/logo.svg" alt="logo" />
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="#" class="active-link">Convert</a></li>
+            <li><a href="#">Bank</a></li>
+            <li><a href="#">Businness</a></li>
+          </ul>
+        </div>
+        <div class="login">
+          <button>Login</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <h2>Convert Currency Online</h2>
+        <div class="main-input-container">
+          <div class="from-input-container">
+            <div class="button-group-container">
+              <p>I have</p>
+              <div class="button-group">
+                <input
+                  type="radio"
+                  name="from-input"
+                  data-currency="RUB"
+                  checked
+                  value="RUB"
+                />
+                <input
+                  type="radio"
+                  name="from-input"
+                  data-currency="USD"
+                  value="USD"
+                />
+                <input
+                  type="radio"
+                  name="from-input"
+                  data-currency="EUR"
+                  value="EUR"
+                />
+                <input
+                  type="radio"
+                  name="from-input"
+                  data-currency="GBP"
+                  value="GBP"
+                />
+              </div>
+            </div>
+            <div class="input-container">
+              <input type="number" min="0" class="from-input" value="0" />
+              <p class="rating"></p>
+            </div>
+          </div>
+          <div class="to-input-container">
+            <div class="button-group-container">
+              <p>Want To Convert</p>
+              <div class="button-group">
+                <input
+                  type="radio"
+                  name="to-input"
+                  data-currency="RUB"
+                  value="RUB"
+                />
+                <input
+                  type="radio"
+                  name="to-input"
+                  data-currency="USD"
+                  checked
+                  value="USD"
+                />
+                <input
+                  type="radio"
+                  name="to-input"
+                  data-currency="EUR"
+                  value="EUR"
+                />
+                <input
+                  type="radio"
+                  name="to-input"
+                  data-currency="GBP"
+                  value="GBP"
+                />
+              </div>
+            </div>
+            <div class="input-container">
+              <input type="text" class="to-input" readonly value="0" />
+              <p class="rating"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
